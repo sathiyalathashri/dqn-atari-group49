@@ -32,6 +32,8 @@ python tabular_q_demo.py             # understand the maths first (no Atari)
 # 1. baselines
 python evaluate.py --game breakout --agent random
 python sarsa_linear.py --game breakout --frames 2000000
+python contingency_sarsa.py --game breakout --frames 2000000
+python contingency_sarsa.py --game breakout --frames 2000000 --no-contingency   # ablation: same features, no avatar features
 
 # 2. DQN, paper settings (10M frames, replay 1M frames, batch 32, eps 1->0.1 over 1M frames)
 python train.py --game breakout                     # GPU strongly recommended
