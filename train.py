@@ -54,6 +54,7 @@ def main():
     json.dump(vars(a), open(os.path.join(out, "config.json"), "w"), indent=1)
     print(f"{a.game}: {env.n_actions} actions, frame-skip {env.frame_skip}, device {a.device}")
 
+
     frames = steps = epoch = 0
     state, first, ep_ret, losses, t0 = env.reset(), True, 0.0, [], time.time()
     best = -1e9

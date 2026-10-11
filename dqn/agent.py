@@ -29,6 +29,7 @@ class DQNAgent:
     def q_values(self, states):
         return self.q(self._t(states))
 
+   #Random action with probability ε, otherwise the argmax of Q. One forward pass scores every action.
     def act(self, state, epsilon: float) -> int:
         """epsilon-greedy behaviour policy."""
         if self.rng.random() < epsilon:
