@@ -14,6 +14,8 @@ dqn_atari/
 ├── evaluate.py          # eps=0.05 evaluation (Sec 5.3), random baseline, Q-value visualization (Fig. 3 analogue)
 ├── sarsa_linear.py      # simplified linear Sarsa baseline with hand-made colour/block features (Table 1 "Sarsa" analogue)
 ├── tabular_q_demo.py    # Sec. 2 on a toy gridworld: Bellman value iteration vs. Q-learning + replay (seconds)
+├── contingency_sarsa.py # NEW: simplified Contingency baseline (Table 1 "Contingency" analogue): Sarsa(λ) + learned
+│                        #      control mask + avatar-position / avatar-relative features; --no-contingency = ablation
 ├── compare.py           # Table-1 style table: your results next to the paper's numbers
 └── tests/test_components.py
 ```
