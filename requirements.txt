@@ -1,0 +1,6 @@
+torch>=2.0
+gymnasium>=1.0
+ale-py>=0.9      # bundles the Atari ROMs, no manual ROM install needed
+numpy
+opencv-python-headless
+matplotlib
